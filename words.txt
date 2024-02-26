@@ -1,5 +1,6 @@
-abba
-abbba
-abbc
-cbba
-ccba
+abbaaa
+abbbaa
+abbcaa
+cbbaaa
+ccbaaa
+acbbca

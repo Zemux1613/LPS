@@ -1,3 +1,6 @@
+import sys
+
+
 def loadWords():
     return open("words.txt", "r", encoding="utf-8").read().split("\n")
 
@@ -26,6 +29,11 @@ def generiere_pattern(words):
 if __name__ == "__main__":
     words = loadWords()
     print(f"words: {words}")
+
+    word_length = len(words[0])
+    if any(len(w) != word_length for w in words[1:]):
+        print("Word length isn't correct.")
+        sys.exit(-1)
 
     predictedPattern = generiere_pattern(words)
     print(f"possible pattern: {predictedPattern}")
