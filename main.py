@@ -27,7 +27,7 @@ if __name__ == "__main__":
     words = loadWords()
     print(f"words: {words}")
 
-    ergebnisse = generiere_pattern(words)
-    print(ergebnisse)
+    predictedPattern = generiere_pattern(words)
+    print(f"possible pattern: {predictedPattern}")
 
 
